@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const api = axios.create({
-  baseURL: "http://localhost:8000", // Substitua pela URL da sua API
+  baseURL: "face-recognition-api-production-1b23.up.railway.app", // Substitua pela URL da sua API
 })
 
 export interface UserData {
