@@ -50,11 +50,13 @@ export default function CadastroPage() {
       })
 
       if (result.success) {
+        setIsSuccess(true)
+        setShowResult(true)
+        router.push("/login")
         console.log({
           title: "Cadastro realizado",
           description: "Seu cadastro foi realizado com sucesso",
         })
-        router.push("/login")
       } else {
         setIsSuccess(false)
         setErrMessage(result.message)
