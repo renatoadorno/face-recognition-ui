@@ -7,10 +7,10 @@ export default function Home() {
     <main className="min-h-screen flex flex-col items-center justify-center p-6 bg-gradient-to-b from-gray-50 to-gray-100">
       <div className="w-full max-w-3xl mx-auto text-center space-y-8">
         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-          Sistema de Reconhecimento Facial
+          Face Recognition
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Uma solução simples e eficiente para autenticação biométrica através de reconhecimento facial.
+          Teste de viabilidade.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
