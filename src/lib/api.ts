@@ -3,7 +3,7 @@
 import axios from "axios"
 
 const api = axios.create({
-  baseURL: "https://face-recognition-api-production-1b23.up.railway.app/", // Substitua pela URL da sua API
+  baseURL: "https://e993-200-152.ngrok-free.app/", // Substitua pela URL da sua API
   headers: {
     'Content-Type': 'application/json',
     'Access-Control-Allow-Origin': '*'
