@@ -9,6 +9,7 @@ interface CameraCaptureProps {
   onClose: () => void
 }
 
+// como espelhar a camera do seguinte componete react
 export default function CameraCapture({ onCapture, onClose }: CameraCaptureProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -56,6 +57,8 @@ export default function CameraCapture({ onCapture, onClose }: CameraCaptureProps
       // Draw the current video frame to the canvas
       const context = canvas.getContext("2d")
       if (context) {
+        context.translate(canvas.width, 0)
+        context.scale(-1, 1)
         context.drawImage(video, 0, 0, canvas.width, canvas.height)
 
         // Convert canvas to base64 image
@@ -80,7 +83,7 @@ export default function CameraCapture({ onCapture, onClose }: CameraCaptureProps
         ) : (
           <>
             <div className="relative bg-gray-100 rounded-md overflow-hidden h-[400px] mb-4">
-              <video ref={videoRef} autoPlay playsInline className="w-full h-full object-cover" />
+              <video ref={videoRef} autoPlay playsInline className="w-full h-full object-cover scale-x-[-1]" />
             </div>
 
             <canvas ref={canvasRef} className="hidden" />

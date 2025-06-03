@@ -53,7 +53,7 @@ export default function LoginInteligentePage() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center p-6 bg-gradient-to-b from-gray-50 to-gray-100">
       <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6">
-        <h1 className="text-2xl font-bold text-center mb-6">Login Inteligente</h1>
+        <h1 className="text-2xl font-bold text-center mb-6">Verificar</h1>
 
         <div className="space-y-4">
           {!showCamera && imagemBase64 ? (

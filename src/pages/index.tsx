@@ -24,17 +24,17 @@ export default function Home() {
             </Button>
           </Link>
 
-          <Link to="/login" className="w-full">
+          <Link to="/login-inteligente" className="w-full">
             <Button
               variant="outline"
               className="w-full h-24 text-lg flex flex-col items-center justify-center gap-2 p-6"
             >
-              <LogIn className="h-8 w-8" />
-              <span>Login</span>
+              <Brain className="h-8 w-8" />
+              <span>Verificar Facial</span>
             </Button>
           </Link>
 
-          <Link to="/login-referencia" className="w-full">
+          {/* <Link to="/login-referencia" className="w-full">
             <Button
               variant="outline"
               className="w-full h-24 text-lg flex flex-col items-center justify-center gap-2 p-6"
@@ -42,17 +42,7 @@ export default function Home() {
               <FileCheck className="h-8 w-8" />
               <span>Login com Referência</span>
             </Button>
-          </Link>
-
-          <Link to="/login-inteligente" className="w-full">
-            <Button
-              variant="outline"
-              className="w-full h-24 text-lg flex flex-col items-center justify-center gap-2 p-6"
-            >
-              <Brain className="h-8 w-8" />
-              <span>Login Inteligente</span>
-            </Button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </main>

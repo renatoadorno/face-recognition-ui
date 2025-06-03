@@ -3,7 +3,7 @@
 import axios from "axios"
 
 const api = axios.create({
-  baseURL: "https://1f03-177-84-208-115.ngrok-free.app/", // Substitua pela URL da sua API
+  baseURL: "https://192.168.0.57:9443/", // Substitua pela URL da sua API
   headers: {
     'Content-Type': 'application/json',
     'Access-Control-Allow-Origin': '*'
@@ -105,14 +105,14 @@ export const apiService = {
 
   smartLogin: async (data: LoginRequest): Promise<LoginResponse> => {
     try {
-      const response = await api.post("/remote-check", {
+      const response = await api.post("/web-check", {
         image: data.imagemBase64,
         method: "faiss"
       })
 
       console.log(response.data);
 
-      if (response.data?.access !== "granted") {
+      if (!response.data?.access) {
           return { success: false, message: "Falha na identificação" }
       }
 
